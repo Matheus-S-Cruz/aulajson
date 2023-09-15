@@ -1,0 +1,28 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(60, 88, 248), rgb(125, 6, 129));
+    font-family: 'Times New Roman', Times, serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: xx-large;
+    text-align: center;
+}
+div {
+    background-image: linear-gradient(to bottom, rgb(60, 88, 248), rgb(125, 6, 129));
+    border: solid;
+    width: 300px;
+    margin: auto;
+    border-width: 1px;
+}
+input {
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: large;
+}
+button {
+    width: 90px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: medium;
+}
