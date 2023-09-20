@@ -4,15 +4,19 @@ const campoNovoLogin = document.getElementById("novoLogin")
 const campoNovaSenha = document.getElementById("novaSenha")
 const campoRepSenha = document.getElementById("repSenha")
 
-let usuarios = [];
 
 function cadastra(){
     if (campoNovaSenha.value == campoRepSenha.value){
-        let usuario = {
+        const usuario = {
             login : campoNovoLogin.value,
             senha : campoNovaSenha.value
         }
-        usuarios.push(usuario);
+        let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
+        if (bancoDeDados == null) {
+            bancoDeDados = [];
+        }
+        bancoDeDados.push(usuario);
+        localStorage.setItem("bancoDeDados", JSON.stringify(bancoDeDados));
         alert("Usuário Cadastrado com sucesso!");
     }
     else{
@@ -20,13 +24,22 @@ function cadastra(){
     }
 }
 
-function login(){
+function login(){  
+    let login = campoLogin.value;
+    let senha = campoSenha.value; 
     let mensagem = "Usuário ou senha incorreta!";
-    for(let usuario of usuarios){
-        if(usuario.login == campoLogin.value && usuario.senha == campoSenha.value){
-            mensagem = "Logado com sucesso!"
-            break;
+    let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
+    if (bancoDeDados == null) {
+        mensagem = "Nenhum usuário cadastrado até o momento";
+    } else {
+        for (let usuario of bancoDeDados) {
+            if (usuario.login == login && usuario.senha == senha) {        
+                mensagem = "Usuário logado com sucesso!";
+                localStorage.setItem("logado", JSON.stringify(usuario));
+                window.location.href = "./logado/home.html";
+                break;
+            }  
         }
-    }
-    alert(mensagem);            
+        alert(mensagem);
+}   
 }
