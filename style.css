@@ -6,13 +6,6 @@ body {
     font-size: xx-large;
     text-align: center;
 }
-div {
-    background-image: linear-gradient(to bottom, rgb(60, 88, 248), rgb(125, 6, 129));
-    border: solid;
-    width: 300px;
-    margin: auto;
-    border-width: 1px;
-}
 input {
     width: 200px;
     height: 20px;
@@ -29,4 +22,21 @@ button {
 .deslogar{
     font-size: large;
     margin-top: 450px;
+}
+.container {
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(60, 88, 248), rgb(125, 6, 129));
+    border: solid;
+    margin: auto;
+    border-width: 2px;
+}
+
+.login {
+    flex: 1;
+}
+
+.registrar {
+    flex: 1;
+    border: solid;
+    border-width: 0.1px;
 }
