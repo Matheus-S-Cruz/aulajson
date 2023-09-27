@@ -12,13 +12,17 @@
     }
   }
 
-body {
+  body {
     font-family: 'Bogart', sans-serif;
     width: 100vw;
     height: 100vh;
     font-size: xx-large;
     text-align: center;
-    background-color: #DF957B;
+    background-image: url(./imagens/cidade.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 input {
     width: 200px;
@@ -26,41 +30,31 @@ input {
     border-radius: 3px;
     text-align: center;
     font-size: large;
-    background-color: rgba(255, 228, 196, 0.205);
 }
 button {
-    width: 90px;
+    width: 100px;
     height: 35px;
     border-radius: 15px;
     font-size: medium;
     background-color: rgba(255, 228, 196, 0.205);
 }
-.deslogar{
-    font-size: large;
-    margin-top: 450px;
-}
-.container {
-    display: flex;
-    margin: auto;
-    background-color: #DF957B;
-    margin-bottom: 200px;
-}
-
 .login {
     flex: 1;
-    color: #A34848;
-    background-color: #F5ECEA;
+    color: #000000;
     border-width: 1px;
+    border-radius: 15px;
     border: solid;
+    margin-right: 750px;
+    margin-left: 750px;
 }
-
 .registrar {
     flex: 1;
-    color: #A34848;
-    background-color: #F5ECEA;
-    border-width: 1px;
-    border: solid;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .h1{
     margin-top: 120px;
+    color: rgb(0, 0, 0);
+    font-family: 'Bogart', sans-serif;
+    font-size: xx-large;
 }

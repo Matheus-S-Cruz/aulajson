@@ -1,0 +1,63 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content > div {
+    flex: 0 1 calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    border-radius: 15px;
+}
+.deslogar {
+    color: white;
+    border-width: 1px;
+    border: solid;
+    width: 250px;
+    text-align: center;
+    margin-left: 42.5%;
+    font-size: large;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+body {
+    font-family: 'Bogart', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: xx-large;
+    text-align: center;
+    background-image: url(../imagens/background.gif); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    overflow: hidden;
+    
+}
+button {
+    width: 90px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: medium;
+    background-color: rgba(254, 255, 196, 0.432);
+}
+.montanhas{
+    color: white;
+}
+.savanas{
+    color: white;
+
+}
+.praias{
+    color: white;
+}
+.florestas{
+    color: white;
+}
+.cavernas{
+    color: white;
+}
+.ilhas{
+    color: white;
+}
